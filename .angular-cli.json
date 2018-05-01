@@ -19,9 +19,20 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "assets/fontawesome/css/fontawesome-all.css",
+        "assets/css/custom.css",
+        "assets/css/custom-themes.css",
+        "assets/css/jquery.jscrollpane.css",
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "../node_modules/jquery/dist/jquery.min.js",
+        "../node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "assets/js/jquery.mousewheel.js",
+        "assets/js/jquery.jscrollpane.min.js",
+        "assets/js/custom.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

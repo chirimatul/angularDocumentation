@@ -1,21 +1,766 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+<div class=" scroll-pane  page-wrapper chiller-theme toggled">
+  <nav id="sidebar" class="sidebar-wrapper">
+      <div class="sidebar-content scroll-pane">
+          <div id="toggle-sidebar">
+              <div></div>
+              <div></div>
+              <div></div>
+          </div>
+          <div class="sidebar-brand">
+              <a href="#">pro sidebar</a>
+          </div>
+          <div class="sidebar-header">
+              <div class="user-pic">
+                  <img class="img-responsive img-rounded" src="assets/img/user.jpg" alt="User picture">
+              </div>
+              <div class="user-info">
+                  <span class="user-name">Jhon
+                      <strong>Smith</strong>
+                  </span>
+                  <span class="user-role">Administrator</span>
+                  <span class="user-status">
+                      <i class="fa fa-circle"></i>
+                      <span>Online</span>
+                  </span>
+              </div>
+          </div>
+          <!-- sidebar-header  -->
+          <div class="sidebar-search">
+              <div>
+                  <div class="input-group">
+                      <input type="text" class="form-control search-menu" placeholder="Search...">
+                      <div class="input-group-append">
+                          <span class="input-group-text">
+                              <i class="fa fa-search" aria-hidden="true"></i>
+                          </span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- sidebar-search  -->
+          <div class="sidebar-menu">
+              <ul>
+                  <li class="header-menu">
+                      <span>General</span>
+                  </li>
+                  <li class="sidebar-dropdown">
+                      <a href="#">
+                          <i class="fa fa-tachometer-alt"></i>
+                          <span>Dashboard</span>
+                          <span class="badge badge-pill badge-danger">New</span>
+                      </a>
+                      <div class="sidebar-submenu">
+                          <ul>
+                              <li>
+                                  <a href="#">Dashboard 1
+                                      <span class="badge badge-pill badge-success">Pro</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">Dashboard 2</a>
+                              </li>
+                              <li>
+                                  <a href="#">Dashboard 3</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="sidebar-dropdown">
+                      <a href="#">
+                          <i class="fa fa-shopping-cart"></i>
+                          <span>E-commerce</span>
+                          <span class="badge badge-pill badge-primary">3</span>
+                      </a>
+                      <div class="sidebar-submenu">
+                          <ul>
+                              <li>
+                                  <a href="#">Products
+
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="#">Orders</a>
+                              </li>
+                              <li>
+                                  <a href="#">Credit cart</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="sidebar-dropdown">
+                      <a href="#">
+                          <i class="far fa-gem"></i>
+                          <span>Components</span>
+                      </a>
+                      <div class="sidebar-submenu">
+                          <ul>
+                              <li>
+                                  <a href="#">General</a>
+                              </li>
+                              <li>
+                                  <a href="#">Panels</a>
+                              </li>
+                              <li>
+                                  <a href="#">Tables</a>
+                              </li>
+                              <li>
+                                  <a href="#">Icons</a>
+                              </li>
+                              <li>
+                                  <a href="#">Forms</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="sidebar-dropdown">
+                      <a href="#">
+                          <i class="fa fa-chart-line"></i>
+                          <span>Charts</span>
+                      </a>
+                      <div class="sidebar-submenu">
+                          <ul>
+                              <li>
+                                  <a href="#">Pie chart</a>
+                              </li>
+                              <li>
+                                  <a href="#">Line chart</a>
+                              </li>
+                              <li>
+                                  <a href="#">Bar chart</a>
+                              </li>
+                              <li>
+                                  <a href="#">Histogram</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="sidebar-dropdown">
+                      <a href="#">
+                          <i class="fa fa-globe"></i>
+                          <span>Maps</span>
+                      </a>
+                      <div class="sidebar-submenu">
+                          <ul>
+                              <li>
+                                  <a href="#">Google maps</a>
+                              </li>
+                              <li>
+                                  <a href="#">Open street map</a>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="header-menu">
+                      <span>Extra</span>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fa fa-calendar"></i>
+                          <span>Calendar</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fa fa-folder"></i>
+                          <span>Examples</span>
+                      </a>
+                  </li>
+                  <li>
+                      <a href="#">
+                          <i class="fa fa-book"></i>
+                          <span>Documentation</span>
+                      </a>
+                  </li>
+              </ul>
+          </div>
+          <!-- sidebar-menu  -->
+      </div>
+      <!-- sidebar-content  -->
+      <div class="sidebar-footer">
+          <a href="#">
+              <i class="fa fa-bell"></i>
+              <span class="badge badge-pill badge-warning notification">3</span>
+          </a>
+          <a href="#">
+              <i class="fa fa-envelope"></i>
+              <span class="badge badge-pill badge-success notification">7</span>
+          </a>
+          <a href="#">
+              <i class="fa fa-cog"></i>
+              <span class="badge-sonar"></span>
+          </a>
+          <a href="#">
+              <i class="fa fa-power-off"></i>
+          </a>
+      </div>
+  </nav>
+  <!-- sidebar-wrapper  -->
+  <main class="page-content ">
+      <div class="container-fluid ">
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <h1>Sidebar template</h1>
+                  <p>This is a responsive sidebar template with dropdown menu based on bootstrap 4 framework.</p>
+
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <h2>Themes</h2>
+                  <p>Here are more themes that you can use</p>
+              </div>
+          </div>
+
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="form-group col-md-12">
+                          <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                          <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                          <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                          <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                          <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                          <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                          <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+                      </div>
+                  </div>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="#" data-theme="chiller-theme" class="theme chiller-theme selected"></a>
+                  <a href="#" data-theme="ice-theme" class="theme ice-theme selected"></a>
+                  <a href="#" data-theme="cool-theme" class="theme cool-theme"></a>
+                  <a href="#" data-theme="light-theme" class="theme light-theme"></a>
+                  <a href="#" data-theme="green-theme" class="theme green-theme"></a>
+                  <a href="#" data-theme="spicy-theme" class="theme spicy-theme"></a>
+                  <a href="#" data-theme="purple-theme" class="theme purple-theme"></a>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+              <div class="form-group col-md-12">
+                  <a href="https://github.com/azouaoui-med/pro-sidebar-template" class="btn btn-secondary" target="_blank">
+                      <i class="fab fa-github"></i> View source</a>
+                  <a href="https://github.com/azouaoui-med/pro-sidebar-template/archive/gh-pages.zip" class="btn btn-outline-secondary" target="_blank">
+                      <i class="fa fa-download"></i> Download</a>
+              </div>
+          </div>
+      </div>
+    </main>
+</div>
